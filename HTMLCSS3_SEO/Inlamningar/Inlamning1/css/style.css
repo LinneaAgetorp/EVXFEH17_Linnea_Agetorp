@@ -1,0 +1,136 @@
+body {
+    background-color: #81b9bf;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #17452E;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+a {
+    text-decoration: underline;
+}
+
+
+/*NAVBAR*/
+
+nav {
+    background-color: #81b9bf;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    opacity: 0.8;
+}
+
+nav ul {
+    margin: 0px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #133939;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: #e5ffff;
+}
+
+
+/*MAIN*/
+
+.main {
+    margin-top: 62px;
+}
+
+.main h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    margin-bottom: 0px;
+}
+
+article {
+    padding: 15px;
+    padding-bottom: 30px;
+}
+
+#article1 {
+    background-color: #b2ebf2;
+}
+
+#article2 {
+    background-color: #e5ffff;
+}
+
+#article3 {
+    background-color: #b2ebf2;
+}
+
+
+/*IMAGE*/
+
+.imgBox {
+    background-color: rgba(246, 242, 242, 0.8);
+    margin: auto;
+    width: 370px;
+    padding: 5px;
+}
+
+figure {
+    margin: 10px;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+
+/*SECTION*/
+
+section {
+    text-align: left;
+    background-color: #133939;
+    color: white;
+    padding: 10px;
+}
+
+section a {
+    color: white;
+}
+
+footer {
+    text-align: left;
+    background-color: #81b9bf;
+    width: 100%;
+    padding: 10px;
+}
