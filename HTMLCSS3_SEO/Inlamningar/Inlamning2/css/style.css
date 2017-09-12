@@ -57,7 +57,7 @@ nav a:hover {
 .syndicate {
     background-color: slategrey;
     margin: 1em;
-    border-bottom: 3px solid darkblue;
+    box-shadow: 7px 7px 10px -1px rgba(0,0,0,0.75);
 }
 
 .syndicate p {
