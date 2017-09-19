@@ -9,6 +9,7 @@ body {
 
 a {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -63,7 +64,35 @@ nav ul li a {
     transform: scale(1.1);
     background-color: #e5ffff;
 }
+/*
+.dropdown{
+    position: relative;
+    display: inline-block;
+}*/
 
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #e5ffff;
+    width: 11em;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown >li:hover .dropdown-content{
+    display: block;
+}
+
+
+.dropdown-content a:hover{
+    background-color: #cce4e4; 
+}
 
 /*MAIN*/
 
@@ -79,21 +108,16 @@ nav ul li a {
     margin-bottom: 0px;
 }
 
-article {
+article:nth-of-type(odd) {
+    background-color: #b2ebf2;
     padding: 15px;
     padding-bottom: 30px;
 }
 
-#article1 {
-    background-color: #b2ebf2;
-}
-
-#article2 {
+article:nth-of-type(even) {
     background-color: #e5ffff;
-}
-
-#article3 {
-    background-color: #b2ebf2;
+    padding: 15px;
+    padding-bottom: 30px;
 }
 
 
@@ -104,6 +128,7 @@ article {
     margin: auto;
     width: 370px;
     padding: 5px;
+
 }
 
 figure {
