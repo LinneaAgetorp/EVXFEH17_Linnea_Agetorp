@@ -24,68 +24,21 @@ a {
 }
 /* End general styling */
 
-/*Navigation bar*/
-nav {
+/*Navigation bar mobile first*/
+label {
+    color: #DA3F3F;
+    line-height: 40px;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+#nav-toggle, nav {
+    display:none;
+}
+
+#nav-toggle:checked + #wrapper nav{
     display: block;
-    text-align: center;
-    height: 40px;
-    width: 1025px;
-    margin: 0 auto;
-    /*opacity: 0.8;*/
-}
-
-nav ul li{
-  background-color: rgb(41, 21, 21);
-  float: left;
-  height: 40px;
-  line-height: 40px;
-  width: 200px;
-  margin-right: 1px;
-  text-align: center;
-}
-
-nav ul ul li span{
-    font-size: 75%;
-    color: white;
-    text-shadow: 2px 2px gray;
-}
-
-/* rounded corners */
-.both_radius, .both_radius a{
-    border-radius: 0px 0px 10px 10px;
-}
-
-#right_radius, #right_radius a{
-    border-radius: 0px 0px 0px 10px;
-}
-
-#left_radius, #left_radius a{
-    border-radius: 0px 0px 10px 0px;
-}
-
-
-/* Hiding dropdown-menu */
-nav ul ul li{
-    display: none;
-    position: relative;
-    width: 200px;
-  }
-
-nav ul ul ul{
-  display: none;
-  position: relative;
-}
-
-/* Showing dropdown-menu */
-nav ul li:hover ul li{
-  display: block;
-}
-
-nav ul ul li:hover ul{
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 200px;
 }
 
 nav a {
@@ -93,8 +46,108 @@ nav a {
     display: block;
 }
 
-nav a:hover {
-    background-color: #7994DF;
+nav a:hover{
+    color: grey;
+    font-weight: bold;
+}
+
+nav ul li{
+    padding: 1em 1em 0em 1em;
+}
+
+nav ul li ul li a{
+    margin-left: 1.5em;
+    color: #7994DF;
+}
+
+nav ul li ul li ul li a{
+    margin-left: 3em;
+    color: #C07575;
+}
+
+
+/* Navigation bar for desktop */
+@media all and (min-width: 600px) {
+
+    label {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+        height: 40px;
+        width: 1025px;
+        margin: 0 auto;
+        /*opacity: 0.8;*/
+    }
+
+    nav ul li{
+    background-color: rgb(41, 21, 21);
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    padding: 0;
+    margin-right: 1px;
+    text-align: center;
+    }
+
+    nav ul li ul li a, nav ul li ul li ul li a{
+        margin: 0;
+        color: white;
+    }
+
+    nav ul ul li span{
+        font-size: 75%;
+        color: white;
+        text-shadow: 2px 2px gray;
+    }
+
+    /* rounded corners */
+    .both_radius, .both_radius a{
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    #right_radius, #right_radius a{
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    #left_radius, #left_radius a{
+        border-radius: 0px 0px 10px 0px;
+    }
+
+
+    /* Hiding dropdown-menu */
+    nav ul ul li{
+        display: none;
+        position: relative;
+        width: 200px;
+    }
+
+    nav ul ul ul{
+        display: none;
+        position: relative;
+    }
+
+    /* Showing dropdown-menu */
+    nav ul li:hover ul li{
+        display: block;
+        margin: 0;
+    }
+
+    nav ul ul li:hover ul{
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 200px;
+        margin: 0;
+    }
+
+    nav a:hover {
+        background-color: #7994DF;
+        color: white;
+    }
 }
 
 .logo {
