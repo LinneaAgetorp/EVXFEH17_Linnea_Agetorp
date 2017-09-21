@@ -27,10 +27,13 @@ a {
 /*Navigation bar mobile first*/
 label {
     color: #DA3F3F;
+    background-color: rgba(70,65,141, 0.95);
     line-height: 40px;
     font-size: 2em;
     cursor: pointer;
     padding: 0.5em;
+    position: fixed;
+    top: 0;
 }
 
 #nav-toggle {
@@ -39,7 +42,10 @@ label {
 
 nav {
     display:none;
-    position: absolute;
+    position: fixed;
+    top: 59px;
+    height: 90%;
+    overflow: scroll;    
     background-color: rgba(70,65,141, 0.95);
     padding-bottom: 1em;
 }
@@ -52,6 +58,7 @@ nav {
 nav a {
     color:white;
     display: block;
+    
 }
 
 nav a:hover{
@@ -66,6 +73,10 @@ nav ul li{
 nav ul li ul li a{
     margin-left: 1.5em;
     color: #7994DF;
+}
+
+#arrow::after{
+    content: " \00bb";
 }
 
 nav ul li ul li ul li a{
@@ -88,6 +99,7 @@ nav ul li ul li ul li a{
         height: 40px;
         width: 1025px;
         margin: 0 auto;
+        overflow: unset;
         /*opacity: 0.8;*/
     }
 
@@ -163,9 +175,16 @@ nav ul li ul li ul li a{
     font-size: 150%;
     color:whitesmoke;
     margin: 1em auto;
-    text-align: center;
+    padding-right: 1em;
+    text-align: right;
     text-shadow: 2px 2px gray;
     border-bottom: 2px dotted whitesmoke;
+}
+@media(min-width: 600px) {
+    .logo {
+        text-align: center;
+        padding: 0;
+    }
 }
 
 /* Article style; colors, paddings, hover-border */
