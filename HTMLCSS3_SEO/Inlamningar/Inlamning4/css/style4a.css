@@ -1,0 +1,290 @@
+/* General styling */
+* {
+    font-family: "Merriweather", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #46418D;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+    cursor: pointer;
+}
+/* End general styling */
+
+/*Navigation bar mobile first*/
+label {
+    color: #DA3F3F;
+    background-color: rgba(70,65,141, 0.95);
+    line-height: 40px;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+}
+
+#nav-toggle {
+    display:none;
+}
+
+nav {
+    display:none;
+    position: fixed;
+    top: 59px;
+    height: 90%;
+    overflow: scroll;    
+    background-color: rgba(70,65,141, 0.95);
+    padding-bottom: 1em;
+}
+
+#nav-toggle:checked + #wrapper nav{
+    display: block;
+    
+}
+
+nav a {
+    color:white;
+    display: block;
+    
+}
+
+nav a:hover{
+    color: grey;
+    font-weight: bold;
+}
+
+nav ul li{
+    padding: 1em 1em 0em 1em;
+}
+
+nav ul li ul li a{
+    margin-left: 1.5em;
+    color: #7994DF;
+}
+
+#arrow::after{
+    content: " \00bb";
+}
+
+nav ul li ul li ul li a{
+    margin-left: 3em;
+    color: #C07575;
+}
+
+
+/* Navigation bar for desktop */
+@media all and (min-width: 600px) {
+
+    label {
+        display: none;
+    }
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+    nav {
+        display: flex;
+        display: block;
+        position: static;
+        text-align: center;
+        height: 40px;
+        justify-content: center;
+        
+        overflow: unset;
+        /*opacity: 0.8;*/
+    }
+
+    nav ul {
+        display: flex;
+        
+    }
+
+nav ul li ul {
+    display: block;
+}
+
+    nav ul li{
+        background-color: rgb(41, 21, 21);
+        align-items: center;
+        height: 40px;
+        line-height: 40px;
+        width: 200px;
+        padding: 0;
+        margin-right: 1px;
+        text-align: center;
+    }
+
+    nav ul li ul li a, nav ul li ul li ul li a{
+        margin: 0;
+        color: white;
+    }
+
+    nav ul ul li span{
+        font-size: 75%;
+        color: white;
+        text-shadow: 2px 2px gray;
+    }
+
+    /* rounded corners */
+    .both_radius, .both_radius a{
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    #right_radius, #right_radius a{
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    #left_radius, #left_radius a{
+        border-radius: 0px 0px 10px 0px;
+    }
+
+
+    /* Hiding dropdown-menu */
+    nav ul ul li{
+        display: none;
+        position: relative;
+        width: 200px;
+    }
+
+    nav ul ul ul{
+        display: none;
+        position: relative;
+    }
+
+    /* Showing dropdown-menu */
+    nav ul li:hover ul li{
+        display: block;
+        margin: 0;
+    }
+
+    nav ul ul li:hover ul{
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 200px;
+        margin: 0;
+    }
+
+    nav a:hover {
+        background-color: #7994DF;
+        color: white;
+    }
+}
+
+
+
+/* Flex-cards */
+
+.section-container{
+    margin-top: 72px;
+}
+
+article{
+    color: whitesmoke;
+    margin-bottom: 5%;
+    display: flex;
+    background-color: slateblue;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+article:nth-of-type(2){
+    background-color: #6868F0;
+}
+
+article:nth-of-type(3){
+    background-color: #6C6C92;
+}
+
+
+.img-article {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    margin: 2px;
+    align-self: center;
+}
+
+.p-article{
+    flex: 1 0 auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+.head-article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: whitesmoke;
+    font-size: 120%;
+    font-weight: 700;
+    padding: 0.5em;
+}
+
+.headline{
+    flex: 1 2 auto;
+}
+
+.second-line{
+    flex: 1 2 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+footer{
+    display: flex;
+    
+    justify-content: center;
+    margin: 2px;
+}
+
+.foot-article{
+    flex: 0 1 auto;
+    color: whitesmoke;
+    background-color: grey;
+    font-size: 2em;
+    
+    width: 80%;
+}
+
+
+/* For desktop */
+
+@media screen and (min-width: 816px) {
+    
+
+    .section-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1em;
+    }
+
+    article{
+        margin: 1em;
+    }
+
+    article:nth-of-type(-n+2){
+        flex: 0 0 45%;
+    }
+    article:nth-of-type(3){
+        flex: 0 0 100%;
+    }
+}
