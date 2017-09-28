@@ -55,7 +55,7 @@ label{
     font-size: 2em;
     cursor: pointer;
     padding: 0.5em;
-    position: fixed;
+    position: absolute;
     top: 0px;
 }
 
