@@ -52,13 +52,11 @@ nav {
 
 #nav-toggle:checked + #wrapper nav{
     display: block;
-    
 }
 
 nav a {
     color:white;
     display: block;
-    
 }
 
 nav a:hover{
@@ -92,10 +90,10 @@ nav ul li ul li ul li a{
         display: none;
     }
 
-#wrapper {
+    #wrapper {
     display: flex;
     justify-content: center;
-}
+    }
 
     nav {
         display: flex;
@@ -104,19 +102,17 @@ nav ul li ul li ul li a{
         text-align: center;
         height: 40px;
         justify-content: center;
-        
         overflow: unset;
         /*opacity: 0.8;*/
     }
 
     nav ul {
         display: flex;
-        
     }
 
-nav ul li ul {
-    display: block;
-}
+    nav ul li ul {
+        display: block;
+    }
 
     nav ul li{
         background-color: rgb(41, 21, 21);
@@ -190,11 +186,11 @@ nav ul li ul {
 
 /* Flex-cards */
 
-.section-container{
+.flex-card-container{
     margin-top: 72px;
 }
 
-article{
+.flex-card{
     color: whitesmoke;
     margin-bottom: 5%;
     display: flex;
@@ -204,11 +200,11 @@ article{
     padding: 5px;
 }
 
-article:nth-of-type(2){
+.flex-card:nth-of-type(2){
     background-color: #6868F0;
 }
 
-article:nth-of-type(3){
+.flex-card:nth-of-type(3){
     background-color: #6C6C92;
 }
 
@@ -237,30 +233,29 @@ article:nth-of-type(3){
     padding: 0.5em;
 }
 
-.headline{
+.current-item{
     flex: 1 2 auto;
 }
 
-.second-line{
+.item-user{
     flex: 1 2 auto;
     display: flex;
     justify-content: space-between;
     font-size: smaller;
 }
 
-footer{
+.wrap-foot{
     display: flex;
     
     justify-content: center;
     margin: 2px;
 }
 
-.foot-article{
+.button-flex-card{
     flex: 0 1 auto;
     color: whitesmoke;
     background-color: grey;
     font-size: 2em;
-    
     width: 80%;
 }
 
@@ -270,21 +265,21 @@ footer{
 @media screen and (min-width: 816px) {
     
 
-    .section-container{
+    .flex-card-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: 1em;
     }
 
-    article{
+    .flex-card{
         margin: 1em;
     }
 
-    article:nth-of-type(-n+2){
+    .flex-card:nth-of-type(-n+2){
         flex: 0 0 45%;
     }
-    article:nth-of-type(3){
+    .flex-card:nth-of-type(3){
         flex: 0 0 100%;
     }
 }
