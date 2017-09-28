@@ -212,7 +212,6 @@ nav ul li:nth-child(6){    background-color: purple; order: -1;}
     display: flex;
     background-color: slateblue;
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 5px;
 }
 
