@@ -1,0 +1,207 @@
+/* --- General Styling --- */
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Header Menu Mobile First */
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+ul li{
+    padding-top: 0.5em;
+}
+
+#nav a:hover, #nav a:active{
+    color: rgb(196, 76, 39);
+}
+
+.page-head{
+    padding: 1em;
+}
+
+.page-title h1{
+    color: rgb(37, 78, 126);
+    text-align: center;
+}
+
+
+/* ----- Header Menu for Desktop ----- */
+@supports (grid-area: auto) {
+    @media screen and (min-width: 800px){
+
+        .toggle{
+            display: none;
+        }
+
+        .page-head{
+            display: flex;
+            justify-content: space-between;
+            height: 11em;
+        }
+
+        .page-title{
+            flex: 1;
+        }
+    
+         .wrapper-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .submenu{
+            display: none;
+            padding: 5px;
+            position: absolute;
+        }
+
+        .wrapper-nav li{
+            position: relative;
+        }
+
+        .wrapper-nav li:hover .submenu{
+            display: block;
+        }
+
+        #nav{
+            flex: 1;
+        }
+
+        #nav span{
+            font-size: 2em;
+            display: inline;
+        }
+    }
+}
+
+
+/* ----- Hiding/Showing Menu in Mobile-screen ------ */
+@media only screen and (max-width: 599px) {
+    #nav {
+        position: fixed; 
+        top: 0;
+        bottom: 0;
+        width: 300px;
+        left: -340px;
+        transition: transform .3s ease-in-out;
+        padding: 0.8em;
+        background-color: rgb(221, 221, 221);
+    }
+    
+    #nav:target {
+        transform: translateX(340px);
+    }
+    
+    .toggle{
+        font-size: 2em;
+        color: rgb(37, 78, 126);
+    }
+
+    #nav span{
+        display: none;
+    }
+}
+
+/* ---- Card styling ---- */
+.card-container{
+    margin-bottom: 1em;
+    text-align: center;
+    padding: 1em;
+    border-top: 2px solid lightgray;
+}
+
+.card{
+    padding: 0.5em;
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+}
+
+.card a{
+    text-decoration: none;
+    color: #777474;
+    width: 100%;
+}
+
+a:hover, a:focus{
+    color: black;    
+}
+
+.card:hover, .card:focus{
+    outline: 1px solid hsl(0, 0%, 80%);
+}
+	
+
+
+@supports (grid-area: auto) {
+    /* Styling läsplatta */
+    @media screen and (min-width: 600px){
+
+        .image{
+            display: grid;
+            grid-template-columns: 9em auto;
+            grid-gap: 1em;
+            margin: 0;
+            align-content: stretch;
+        }
+
+        .image img {
+            grid-column: 1;
+        }
+
+        .caption-title{
+            grid-column: 2;
+        }
+
+        .caption-title + p{
+            grid-column: 2;
+        }
+    }
+
+    /* Styling desktop */
+    @media screen and (min-width: 820px) {
+        .card-container{
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-gap: 1em;
+            margin: 0;
+        }
+
+        .card{
+            padding: 0;
+        }
+
+        .card:nth-of-type(1) {
+            grid-row: span 3; 
+            align-content: stretch;   
+        }
+
+        .card:nth-of-type(8) {
+            grid-row: span 3;
+            align-content: stretch;
+        }
+
+        .card:nth-of-type(1) a .image {
+            display: block;
+        }
+
+        .card:nth-of-type(8) a .image {
+            display: block;
+        }
+        
+    }
+}

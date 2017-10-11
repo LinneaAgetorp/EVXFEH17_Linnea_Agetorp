@@ -92,20 +92,35 @@ nav ul li ul li ul li a{
         display: none;
     }
 
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+
     nav {
+        display: flex;
         display: block;
         position: static;
         text-align: center;
         height: 40px;
-        width: 1025px;
-        margin: 0 auto;
+        justify-content: center;
+        
         overflow: unset;
         /*opacity: 0.8;*/
     }
 
+    nav ul {
+        display: flex;
+        
+    }
+
+nav ul li ul {
+    display: block;
+}
+
     nav ul li{
         background-color: rgb(41, 21, 21);
-        float: left;
+        align-items: center;
         height: 40px;
         line-height: 40px;
         width: 200px;
