@@ -1,0 +1,67 @@
+/* Images */
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Cards Main Content */
+@supports (grid-area: auto) {
+
+    @include respond-to("medium"){
+        
+        .card{
+            display: grid;
+            border-top: 2px solid black;
+            a{
+                display: grid;
+            }
+        }
+
+        & a .image{
+            display: grid;
+            grid-template-rows: 40px auto;
+            margin: 0;
+            align-items: stretch;
+        }
+
+        .caption{
+            grid-row: 1;
+        }
+
+        .image img{
+            grid-row: 2;
+        }
+
+        .main-content-wrapper{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 200px 200px auto;
+            grid-gap: 1em;
+            margin: 1em;
+        }
+        
+        /* Manuell placering av särskilda kort */
+        .card:nth-child(2) {
+            grid-column: 2/span 2;
+            grid-row: span 2;
+        }
+
+        .card:nth-child(3) {
+            grid-column: 4/span 2;
+            grid-row: 1;
+            img {
+                max-height: 148px;
+            }
+        }
+
+        .card:nth-child(5) {
+            grid-column: 4/span 2;
+            grid-row: auto/span 2;
+        }
+
+        .card:nth-child(6) {
+            grid-column: 1/span 2;
+            grid-row: 3;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css); /* FA icons */
+
+
+/// Text setup
+$text: (
+  body: unquote("'Merriweather', serif"),
+  body-weight: 400,
+  headline: unquote("'Oswald', 'Helvetica Neue', Arial, sans-serif"),
+  headline-weight: 400,
+) !default;
+
+
+/// COLORS map
+$colors: ( 
+  dark: rgb(37, 78, 126),
+  bright: rgb(219, 227, 233),
+  alternative: rgb(185, 50, 50),
+  ) !default;
+
+
+
+/// Breakpoint map
+
+$breakpoints: (
+  'small':  ( min-width:  30em ),
+  'medium': ( min-width:  45em ),
+) !default;
+
+

@@ -1,0 +1,52 @@
+/* Buttons to add or remove content */
+.add-icon{
+    @include button-bg(rgba(51, 136, 51, 0.836));
+    a{
+        color:white;
+    }
+}
+
+.remove-icon{
+    @include button-bg(rgb(187, 57, 57));
+    a{
+        color:white;
+    }
+}
+
+.button{
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+
+
+/* Footer */
+.foot{
+    padding: 1em;
+    text-align: center;
+}
+
+.tags p:nth-child(1){
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.icons {
+    font-size: 3em;
+    color: map-get($colors, dark);
+}
+
+@include respond-to("medium"){
+    .foot{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: map-get($colors, bright);
+    }
+
+    .icons i{
+        padding: 1em;
+    } 
+
+}
+

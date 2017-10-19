@@ -1,0 +1,27 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css); /* Normalize-fil*/
+
+* {
+    font-family: map-get($text, body);
+    box-sizing: border-box;
+}
+
+p {
+    font-family: map-get($text, headline);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    li{
+        padding-top: 0.5em;
+        font-weight: map-get($text, body-weight);
+    }
+}
+
