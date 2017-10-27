@@ -4,6 +4,19 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
+/* sass breakpoint mixin */
+.red-circle, .blue-circle, .green-circle {
+  color: white;
+  text-decoration: none;
+  padding: 1%;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em; }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /* Include all base styles */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -415,24 +428,23 @@ header h1, .footer-title {
 .main-grid {
   background-color: #282828; }
 
-@supports (display: grid) {
-  @media (min-width: 40em) {
-    .main-grid {
-      display: grid;
-      grid-template-rows: 10em 50vh auto 10em;
-      grid-template-columns: 1fr minmax(30em, 5fr) minmax(10em, 1fr) 1fr;
-      grid-template-areas: "header header header header" "hero hero hero hero" ". main sidebar ." "footer footer footer footer";
-      grid-gap: 10px; }
-    header {
-      grid-area: header; }
-    .hero {
-      grid-area: hero; }
-    .main {
-      grid-area: main; }
-    .sidebar {
-      grid-area: sidebar; }
-    .footer-title {
-      grid-area: footer; } } }
+@media (min-width: 40em) {
+  .main-grid {
+    display: grid;
+    grid-template-rows: 10em 50vh auto 10em;
+    grid-template-columns: 1fr minmax(30em, 5fr) minmax(10em, 1fr) 1fr;
+    grid-template-areas: "header header header header" "hero hero hero hero" ". main sidebar ." "footer footer footer footer";
+    grid-gap: 10px; }
+  header {
+    grid-area: header; }
+  .hero {
+    grid-area: hero; }
+  .main {
+    grid-area: main; }
+  .sidebar {
+    grid-area: sidebar; }
+  .footer-title {
+    grid-area: footer; } }
 
 /* Include all module style and layout */
 /* nav styles */
@@ -476,6 +488,9 @@ header h1, .footer-title {
     text-align: center; }
   #nav li {
     display: inline-block; } }
+
+.main > h1 {
+  color: white !important; }
 
 /* Card-styling */
 .card {
@@ -600,3 +615,52 @@ header h1, .footer-title {
   background-color: #24d4a0;
   color: #f5f5f5;
   padding: 1em; }
+
+.red-circle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: red;
+  margin-right: 10px;
+  align-self: center; }
+  .red-circle:hover {
+    background-color: green;
+    transition: all 0.3s ease;
+    background: #ff6666; }
+  .red-circle:active {
+    background: #ff8080; }
+
+.blue-circle {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  color: #83ec83;
+  background-color: blue;
+  margin-right: 10px;
+  display: flex; }
+  .blue-circle:hover {
+    background-color: brown;
+    transition: all 0.3s ease;
+    background: #6666ff; }
+  .blue-circle:active {
+    background: #8080ff; }
+  .blue-circle span {
+    align-self: center; }
+
+.green-circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  color: blue;
+  background-color: green;
+  margin-right: 10px;
+  display: flex; }
+  .green-circle:hover {
+    background-color: red;
+    transition: all 0.3s ease;
+    background: #00e600; }
+  .green-circle:active {
+    background: #01ff01; }
+  .green-circle span {
+    align-self: center; }

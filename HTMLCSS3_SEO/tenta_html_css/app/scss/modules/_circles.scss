@@ -5,14 +5,23 @@
 .red-circle{
     @include circle(50px, white);
     @include design-circle(red, green);
+    align-self: center;
 }
 
 .blue-circle{
-    @include circle(75px, green);
+    @include circle(75px, rgb(131, 236, 131));
     @include design-circle(blue, brown);
+    display: flex;
+    span{
+        align-self: center;
+    }
 }
 
 .green-circle{
     @include circle(100px, blue);
     @include design-circle(green, red);
+    display: flex;
+    span{
+        align-self: center;
+    }
 }

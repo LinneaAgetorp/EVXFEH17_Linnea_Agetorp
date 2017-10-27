@@ -1,3 +1,4 @@
+//Mixin för cirkelns storlek och textfärg
 @mixin circle ($circle-size, $text-color){
   border-radius: 50%;
   width: $circle-size;
@@ -5,6 +6,8 @@
   color: $text-color;
 }
 
+
+//Mixin för cirkelns färger och hover-effekt
 @mixin design-circle ($background-color, $hover-color){
 background-color: $background-color;
 margin-right: 10px;
@@ -19,19 +22,19 @@ margin-right: 10px;
 }
 }
 
-
-/*
-  ///Mixin for buttons
-  @mixin button-bg($bg) {
-  background: $bg;
-  @extend %btn;
-  &:hover {
-    background:darken($bg,8%);
-    transition: all 0.3s ease;
+/* sass breakpoint mixin */
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+      // Prints a media query based on the value
+      @media #{inspect(map-get($breakpoints, $breakpoint))} {
+          @content;
+      }
   }
-  &:active {
-    background:darken($bg,25%);
-  } 
+
+  // If the key doesn't exist in the map
+  @else {
+      @warn "Unfortunately, no value could be retrieved from #{$breakpoint}. Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
 }
 
-*/

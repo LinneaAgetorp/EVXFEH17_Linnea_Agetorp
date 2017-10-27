@@ -1,4 +1,9 @@
+.main > h1{
+    color: white!important;
+}
+
 /* Card-styling */
+
 .card{
     background-color: map-get($color, accent3);
     margin-bottom: 10px;
