@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: map-get($color, bright);
+}
+
+ul {
+    list-style-type: none;
+}
+
+//Centrerar header + footer, ger färg
+header h1, .footer-title{
+    align-items: center;
+    color: map-get($color, accent1);
+    text-align: center;
+    
+}
+

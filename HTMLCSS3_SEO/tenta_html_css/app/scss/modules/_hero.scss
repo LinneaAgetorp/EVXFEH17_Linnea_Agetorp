@@ -1,0 +1,15 @@
+.hero{
+    background-image: url("/img/o-SCOTLAND-facebook1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    .hero-title, .sub-title{
+        color: map-get($color, bright);
+        text-shadow: 2px 2px 5px black;
+        margin-bottom: 0;
+    }
+}

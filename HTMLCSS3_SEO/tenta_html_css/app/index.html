@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Att insupa Islay är att leva">
   <title></title>
   <!--build:css css/styles.min.css-->
   <link rel="stylesheet" href="css/styles.css">
@@ -10,15 +11,95 @@
   <!--endbuild-->
 </head>
 
-<body>
-  This is a gulp-starter
-  <div class="testing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quia?</div>
+<body class="main-grid">
+  <header>
+      <a class="toggle open" href="#nav">&#9776  </a>
+    
   
-  <!--build:js js/main.min.js -->
-  <script src="js/lib/a-library.js"></script>
-  <script src="js/lib/another-library.js"></script>
-  <script src="js/main.js"></script>
-  <!-- endbuild -->
+   
+  <nav id="nav">   
+      <a class="toggle close" href="#">X</a> 
+      <ul>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+      </ul>
+  </nav>
+  <h1>Scotland</h1>
+</header>
+
+<div class="hero">
+  <h1 class="hero-title">Wiskey</h1>
+  <p class="sub-title">är bäst</p>
+</div>
+
+
+<!--<h1>From the Islay Blog</h1>  -->
+<div class="main">
+    
+    
+    <!-- Blog Posts -->
+    <div class="card">
+      <img class="card-image" src="/img/portree.jpg" alt="port-town islay">
+      <h2 class="card-title">Wiskey Blog</h2>
+      <div class="card-content">
+        <figcaption class="caption">
+            
+          <p><h1>Islay Wiskey Charter. </h1> Everything that grows creates lines; the abstract telling of the story of a life. </p>
+          <a href="#">Read more</a>
+        </figcaption>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-image" src="/img/Scotland-Family-1000x604.jpg.aspx.jpeg" alt="Family home in Scotland">
+      <h2 class="card-title">Islay Blog</h2>
+      <div class="card-content">
+        <figcaption class="caption">
+            
+          <p>Everything that grows creates lines; the abstract telling of the story of a life. </p>
+          <a href="#">Read more</a>
+        </figcaption>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-image" src="/img/129462-004-F0811118.jpg" alt="map of Scotland">
+      <h2 class="card-title">Islay Blog</h2>
+      <div class="card-content">
+        <figcaption class="caption">
+            
+          <p>Everything that grows creates lines; the abstract telling of the story of a life. </p>
+          <a href="#">Read more</a>
+        </figcaption>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="portfolio">
+        <div class="portfolio-item medium"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, commodi.</p></div>
+        <div class="portfolio-item large with-image"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, commodi.</p></div>
+        <div class="portfolio-item medium"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, commodi.</p></div>
+        <div class="portfolio-item small"><p>adipisicing elit. Ad, commodi.</p></div>
+        <div class="portfolio-item tall"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, commodi.</p></div>
+        <div class="portfolio-item wide"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, commodi.</p></div>
+        <div class="portfolio-item wide"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, commodi.</p></div>
+        <div class="portfolio-item medium"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, commodi.</p></div>
+      </div>
+    </div>
+    
+  </div>
+   
+  <aside class="sidebar">
+    <h1>Sidebar Stuff</h1>
+    <p>Sidebar text</p>
+  </aside>
+   
+  <footer class="footer-title">
+    <h1>The End</h1>
+  </footer>
+
+
 </body>
 
 </html>
