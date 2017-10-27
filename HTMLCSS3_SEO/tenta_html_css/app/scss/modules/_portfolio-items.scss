@@ -35,7 +35,7 @@
 }
 
 
-//Enskilda boxar ges storlek till gridcontainern
+//Enskilda boxar placeras ut i gridcontainern
 @include respond-to ("medium"){
     .small{
         grid-column: span 1;

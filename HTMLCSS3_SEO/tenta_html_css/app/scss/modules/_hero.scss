@@ -1,8 +1,9 @@
+//Styling för hero-bilden
 .hero{
     background-image: url("/img/o-SCOTLAND-facebook1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
+    display: flex; //Centrerar texten vertikalt och horisontellt med flex
     flex-direction: column;
     justify-content: center;
     align-items: center;

@@ -49,9 +49,11 @@
  }
 
  @include respond-to("medium"){
+    //Gömmer menyknappar i desktop-view
     .toggle {
         display: none;
       }
+    //Justerar meny-listan till inline-block och centrerad
     #nav {
         ul {
             text-align: center;
