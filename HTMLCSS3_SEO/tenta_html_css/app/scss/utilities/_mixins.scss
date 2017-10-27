@@ -1,33 +1,26 @@
-///Mixin using breakpoint map 
-@mixin respond-to($breakpoint) {
-  // If the key exists in the map
-  @if map-has-key($breakpoints, $breakpoint) {
-    // Prints a media query based on the value
-    @media #{inspect(map-get($breakpoints, $breakpoint))} {
-      @content;
-    }
-  }
- 
-  // If the key doesn't exist in the map
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Available breakpoints are: #{map-keys($breakpoints)}.";
-  }
+@mixin circle ($circle-size, $text-color){
+  border-radius: 50%;
+  width: $circle-size;
+  height: $circle-size;
+  color: $text-color;
 }
 
-///Mixin for page background
-/// @param {url} $imagepath - set the url of the page-bg
-@mixin page-bg($imagepath,$bgrepeat:no-repeat,$bgattachment:fixed,$bgsize:cover) {
-	
-		color: map-get($color, bright);
-  		background: map-get($color, accent2);
-        background-image: url($imagepath);
-        background-repeat: $bgrepeat;
-		background-attachment:$bgattachment;
-		background-size:$bgsize;
-    
-	}
+@mixin design-circle ($background-color, $hover-color){
+background-color: $background-color;
+margin-right: 10px;
+@extend %button;
+&:hover {
+  background-color: $hover-color; 
+  transition: all 0.3s ease;
+  background: lighten($background-color, 20%);
+}
+&:active{
+  background: lighten($background-color, 25%);
+}
+}
 
+
+/*
   ///Mixin for buttons
   @mixin button-bg($bg) {
   background: $bg;
@@ -41,3 +34,4 @@
   } 
 }
 
+*/

@@ -1,0 +1,18 @@
+.container{
+    @extend %container;
+}
+
+.red-circle{
+    @include circle(50px, white);
+    @include design-circle(red, green);
+}
+
+.blue-circle{
+    @include circle(75px, green);
+    @include design-circle(blue, brown);
+}
+
+.green-circle{
+    @include circle(100px, blue);
+    @include design-circle(green, red);
+}

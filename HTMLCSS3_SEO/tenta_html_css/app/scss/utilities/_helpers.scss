@@ -1,15 +1,17 @@
 //Placeholders and classes: ;
-
 ///Button placeholder
-%btn{
-	width: 200px;
-  height: 200px;
-	border-radius: 50%;
+%button{
 	color:white;
  text-decoration:none;
- padding:5%;
-margin: 10px;	
- font-family: 'Poiret One', cursive;
+ padding:1%;
+ font-family: Arial, sans-serif;
  font-size:1.5em;
 }
+
+%container{
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
 
