@@ -13,6 +13,7 @@
   font-size: 1.5em; }
 
 .container {
+  height: 800px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -551,7 +552,7 @@ header h1, .footer-title {
 .main-content {
   min-height: 100vh;
   margin-bottom: 1em;
-  background-color: #1d8aaf; }
+  background-color: #282828; }
   @media (min-width: 40em) {
     .main-content {
       grid-column: 1/3; } }
@@ -585,10 +586,12 @@ header h1, .footer-title {
   .large {
     grid-column: span 3;
     grid-row: span 3;
-    transition: ease 0.3s; }
+    transition: ease 0.3s;
+    background-image: url("/img/scotland.png");
+    background-size: cover;
+    opacity: 0.2; }
     .large:hover {
-      background-image: url("/img/scotland.png");
-      background-size: cover; }
+      opacity: 1; }
   .tall {
     grid-column: span 2;
     grid-row: span 3; }
