@@ -628,6 +628,10 @@ header h1, .footer-title {
   margin-right: 10px;
   align-self: center; }
   .red-circle:hover {
+    color: white; }
+  .red-circle:active {
+    color: white; }
+  .red-circle:hover {
     background-color: green;
     transition: all 0.3s ease;
     background: #ff6666; }
@@ -642,6 +646,10 @@ header h1, .footer-title {
   background-color: blue;
   margin-right: 10px;
   display: flex; }
+  .blue-circle:hover {
+    color: #dbfadb; }
+  .blue-circle:active {
+    color: #f2fdf2; }
   .blue-circle:hover {
     background-color: brown;
     transition: all 0.3s ease;
@@ -659,6 +667,10 @@ header h1, .footer-title {
   background-color: green;
   margin-right: 10px;
   display: flex; }
+  .green-circle:hover {
+    color: #6666ff; }
+  .green-circle:active {
+    color: #8080ff; }
   .green-circle:hover {
     background-color: red;
     transition: all 0.3s ease;

@@ -4,6 +4,12 @@
   width: $circle-size;
   height: $circle-size;
   color: $text-color;
+  &:hover{
+    color:lighten($text-color, 20%);
+  }
+  &:active{
+    color:lighten($text-color, 25%);
+  }
 }
 
 
@@ -16,10 +22,12 @@ margin-right: 10px;
   background-color: $hover-color; 
   transition: all 0.3s ease;
   background: lighten($background-color, 20%);
+  
 }
 &:active{
   background: lighten($background-color, 25%);
-}
+  
+  }
 }
 
 /* sass breakpoint mixin */
