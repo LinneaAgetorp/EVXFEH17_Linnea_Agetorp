@@ -1,0 +1,33 @@
+  ///Mixin for buttons
+  @mixin button-bg($bg) {
+  background: $bg;
+  @extend %btn;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  } 
+}
+
+@mixin circle ($circle-size, $text-color){
+    border-radius: 50%;
+    width: $circle-size;
+    height: $circle-size;
+    color: $text-color;
+}
+
+@mixin design-circle ($background-color, $hover-color){
+  background-color: $background-color;
+  margin-right: 10px;
+  @extend %button;
+  &:hover {
+    background-color: $hover-color; 
+    transition: all 0.3s ease;
+    background: lighten($background-color, 20%);
+  }
+  &:active{
+    background: lighten($background-color, 25%);
+  }
+}
