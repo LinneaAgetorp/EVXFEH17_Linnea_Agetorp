@@ -1,0 +1,50 @@
+
+
+
+@include respond-to('small') {
+  //Style menu in mobile-view only
+  /* nav styles */
+  #nav ul li {
+    font-size: 2em;
+    padding: 1em;
+    border-bottom: 3px solid whitesmoke;
+  }
+  #nav a:hover{
+    color: map-get($colors, hover-effect)
+  }
+
+  #nav {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 340px;
+    max-width: 69em;
+    height: 100vh;
+    left: -350px;
+    transition: transform .3s ease-in-out;
+    background-color: map_get($colors, dark);
+    padding-top: 1.5em;
+    &:target {
+      transform: translateX(340px);
+    }
+    .toggle{
+      padding-left: 1.2em;
+      font-size: 2em;
+    }
+  }
+  header {
+    .toggle{
+      font-size: 3em;
+      text-align: center;
+      padding: 1em;
+    }
+  }
+}
+
+//Hides menu on bigger screens than mobile-view
+header {
+  @include respond-to('medium') {
+    display: none;
+  }
+}

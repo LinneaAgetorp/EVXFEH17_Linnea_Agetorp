@@ -1,0 +1,22 @@
+.introduction{
+  #first-letter{
+    font-size: 4em;
+  }
+  .intro-text{
+    padding: 1em;
+    font-size: 1.6em;
+    p{
+      padding: 0.5em;
+    }
+  }
+
+  //style of bookshop-image
+  #intro-img {
+    margin: 0;
+    img {
+      width: 100vw;
+      height: auto;
+    }
+  }
+}
+

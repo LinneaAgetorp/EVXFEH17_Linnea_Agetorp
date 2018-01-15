@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: whitesmoke;
+}
+
+body{
+    background-color: map_get($colors, dark);
+}
+
+
+a {
+    text-decoration: none;
+    color: map-get($colors, bright);
+}
+
+ul {
+    list-style-type: none;
+}

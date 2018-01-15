@@ -1,0 +1,27 @@
+#noteworthy-title{
+  text-align: center;
+  margin-top: 2em;
+}
+
+.book-wrapper figure {
+  margin: 2em 0;
+  img{
+    @extend %imagesize;
+    border: 3px solid #232323;
+    border-radius: 5px;
+}
+
+
+
+  figcaption{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0.5em;
+  }
+}
+
+
+
+    #older-books{
+      text-align: center;
+    }

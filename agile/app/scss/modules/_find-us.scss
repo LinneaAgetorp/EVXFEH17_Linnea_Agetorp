@@ -1,0 +1,30 @@
+.when-and-where{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #find-us-title{
+    margin: 2em;
+  }
+}
+
+#map img{
+  @extend %imagesize;
+
+}
+
+.find-us-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4em;
+  p{
+    text-align: center;
+    font-size: 1.6em;
+  }
+  #when{
+    text-align: center;
+  }
+}
+
+
+

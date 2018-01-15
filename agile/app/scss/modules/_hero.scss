@@ -1,0 +1,26 @@
+//style for hero-img and page-title
+
+.hero{
+  background-image: url("../images/old-books2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  position: relative;
+}
+
+.page-title {
+  background-color: rgba(200, 200, 200, 0.3);
+  margin: 0;
+  padding: 1em;
+  font-size: 3em;
+  text-shadow: #2e2e41 2px 2px;
+  position: absolute;
+  top: 100px;
+  right: 5%;
+  @include respond-to('medium') {
+    top: 60px;
+    font-size: 5em;
+    padding: 0.4em;
+  }
+}
+

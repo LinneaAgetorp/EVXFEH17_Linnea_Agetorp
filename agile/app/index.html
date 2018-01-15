@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2nd hand BookShop</title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/print.css">
+    <!--endbuild-->
+</head>
+
+<body>
+    <div class="hero">
+        <header>
+            <a class="toggle open" href="#nav">&#9776  </a>
+
+
+            <nav id="nav">
+                <a class="toggle close" href="#">X</a>
+                <ul>
+                    <li><a href="#noteworthy-title">New and Noteworthy</a></li>
+                    <li><a href="#form-title">Write to us!</a></li>
+                    <li><a href="#find-us-title">When and where to find us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <h1 class="page-title">
+           Used Books <br> Finding<br> New Life
+        </h1>
+    </div>
+
+    <section class="introduction">
+        <div class="intro-text">
+            <p><span id="first-letter">W</span>elcome to our bookshop with a special interest in used and unique books</p>
+            <p>Reading a book is to travel <br>- without even leaving home</p>
+            <p>Classical books and sci-fi are extra special to us</p>
+        </div>
+        <figure id="intro-img">
+            <img src="../images/book-storage2.jpeg" alt="bookshelves in the store">
+        </figure>
+
+    </section>
+
+    <section class="noteworthy">
+        <h1 id="noteworthy-title">
+            New and Noteworthy
+        </h1>
+
+        <div class="book-wrapper">
+            <figure>
+                <img src="../images/airplane-book.jpeg" alt="book about airplanes">
+                <figcaption>Story of an aeroplane</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/old-books.jpeg" alt="mix of old books">
+                <figcaption>Fjodor Dostoyevskij's Crime and Punishment</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/new-books.jpeg" alt="book collection">
+                <figcaption>A new collection of Scandinavia's finest and darkest crime stories</figcaption>
+            </figure>
+        </div>
+        <p id="older-books"><a href="#">See older and noteworthy titles --></a></p>
+    </section>
+
+    <section class="form-wrapper">
+        <h1 id="form-title">Do you have a question for us?</h1>
+        <p>Maybe you just want to discuss great books,<br>
+        or are you interested in a special title, that we might be able to dig out </p>
+        <p>Do you have great books you want to sell to us? </p>
+        <p>Write!</p>
+        <p>And we will answer within a couple of days</p>
+
+        <form action="" class="contact-form">
+            <div class="col-50">
+                <div class="input-block">
+
+                    <input type="text" class="form-control" placeholder="First Name">
+                </div>
+            </div>
+            <div class="col-50">
+                <div class="input-block">
+
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="col-100">
+
+                <div class="input-block">
+                    <input type="text" id="email" class="form-control" placeholder="Email">
+                </div>
+            </div>
+            <div class="col-100">
+                <div class="input-block">
+
+                    <input type="text" class="form-control" placeholder="Message Subject">
+                </div>
+            </div>
+            <div class="col-100">
+                <div class="input-block textarea">
+
+                    <textarea rows="3" type="text" class="form-control" placeholder="Write message..."></textarea>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <button class="square-button">Send</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="when-and-where">
+        <h1 id="find-us-title">Where to find us</h1>
+        <div class="find-us-wrapper">
+            <figure id="map">
+                <img src="../images/map.png" alt="map of vaxjo">
+            </figure>
+            <div class="adress">
+                <p>Medborgarskolan</p>
+                <p>280 72 Växjö</p>
+                <p>0470 123 123</p>
+            </div>
+            <div class="open-hours">
+                <h1 id="when">And When</h1>
+                <p>Tuesday - Friday 9 - 18</p>
+                <p>Weekends 9 - 15</p>
+                <p>Mondays closed</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
